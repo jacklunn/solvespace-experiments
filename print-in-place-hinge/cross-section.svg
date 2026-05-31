@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" width="480" height="420" font-family="monospace" font-size="12">
+
+  <!-- Background -->
+  <rect width="480" height="420" fill="#f8f8f8"/>
+
+  <!-- Title -->
+  <text x="240" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#222">Print-in-Place Hinge — Cross-Section (Along Pin Axis)</text>
+  <text x="240" y="40" text-anchor="middle" font-size="11" fill="#555">not to scale — gap exaggerated for clarity</text>
+
+  <!-- Center -->
+  <!-- cx=200, cy=220 -->
+
+  <!-- Barrel outer (Leaf A or B — same cross-section) -->
+  <!-- barrel_r = pin_r + gap + wall = 2 + 0.25 + 1.2 = 3.45mm, drawn at 28px/mm -->
+  <!-- pin_r = 2mm = 56px, barrel_r = 3.45mm = 97px, gap = 0.25mm = 7px (exaggerated to 14px for visibility) -->
+
+  <!-- Leaf A: tab extends right (+X), barrel outer r=97px -->
+  <circle cx="200" cy="220" r="97" fill="#4a90d9" stroke="#2c5f8a" stroke-width="2"/>
+  <!-- Leaf A tab (right side) -->
+  <rect x="297" y="194" width="80" height="52" rx="3" fill="#4a90d9" stroke="#2c5f8a" stroke-width="2"/>
+  <text x="337" y="215" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Leaf A</text>
+  <text x="337" y="230" text-anchor="middle" font-size="10" fill="white">tab →</text>
+
+  <!-- Barrel inner hole (gap cavity) — knocked out from Leaf A -->
+  <!-- gap exaggerated: pin_r=56px, drawn gap=14px, so inner barrel face at 70px -->
+  <circle cx="200" cy="220" r="70" fill="#f8f8f8"/>
+
+  <!-- Gap ring (the clearance space) — highlight -->
+  <circle cx="200" cy="220" r="70" fill="none" stroke="#c00" stroke-width="14" stroke-dasharray="6,3" opacity="0.5"/>
+
+  <!-- Pin -->
+  <circle cx="200" cy="220" r="56" fill="#aaa" stroke="#555" stroke-width="2"/>
+  <text x="200" y="224" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">pin</text>
+
+  <!-- Center crosshair -->
+  <line x1="192" y1="220" x2="208" y2="220" stroke="#555" stroke-width="1"/>
+  <line x1="200" y1="212" x2="200" y2="228" stroke="#555" stroke-width="1"/>
+
+  <!-- Gap dimension callout (right side, horizontal) -->
+  <!-- from pin edge (200+56=256) to barrel inner face (200+70=270) -->
+  <line x1="256" y1="200" x2="270" y2="200" stroke="#c00" stroke-width="1.5"/>
+  <line x1="256" y1="194" x2="256" y2="206" stroke="#c00" stroke-width="1.5"/>
+  <line x1="270" y1="194" x2="270" y2="206" stroke="#c00" stroke-width="1.5"/>
+  <line x1="263" y1="200" x2="263" y2="175" stroke="#c00" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="263" y="170" text-anchor="middle" font-size="11" font-weight="bold" fill="#c00">gap = 0.25mm</text>
+  <text x="263" y="183" text-anchor="middle" font-size="10" fill="#c00">(exaggerated here)</text>
+
+  <!-- Pin radius callout (left side) -->
+  <line x1="200" y1="220" x2="144" y2="220" stroke="#555" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="144" y1="214" x2="144" y2="226" stroke="#555" stroke-width="1"/>
+  <text x="100" y="210" text-anchor="middle" font-size="11" fill="#444">pin_r</text>
+  <text x="100" y="223" text-anchor="middle" font-size="11" fill="#444">= 2.0mm</text>
+
+  <!-- Barrel outer radius callout (top) -->
+  <line x1="200" y1="220" x2="200" y2="123" stroke="#2c5f8a" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="194" y1="123" x2="206" y2="123" stroke="#2c5f8a" stroke-width="1"/>
+  <text x="200" y="110" text-anchor="middle" font-size="11" fill="#2c5f8a">barrel_r = 3.45mm</text>
+
+  <!-- Wall thickness callout (bottom-left diagonal) -->
+  <!-- barrel inner = 200+70 at 225deg => about x=151,y=269; barrel outer=200+97 at 225deg => x=131,y=289 -->
+  <line x1="151" y1="270" x2="131" y2="289" stroke="#2c5f8a" stroke-width="1.5"/>
+  <line x1="144" y1="264" x2="158" y2="276" stroke="#2c5f8a" stroke-width="1.5"/>
+  <line x1="124" y1="283" x2="138" y2="295" stroke="#2c5f8a" stroke-width="1.5"/>
+  <text x="90" y="315" text-anchor="middle" font-size="11" fill="#2c5f8a">wall = 1.2mm</text>
+
+  <!-- Legend -->
+  <rect x="360" y="280" width="14" height="14" fill="#4a90d9" stroke="#2c5f8a" stroke-width="1"/>
+  <text x="380" y="292" font-size="11" fill="#333">Barrel (Leaf A/B)</text>
+  <rect x="360" y="302" width="14" height="14" fill="#aaa" stroke="#555" stroke-width="1"/>
+  <text x="380" y="314" font-size="11" fill="#333">Pin</text>
+  <rect x="360" y="324" width="14" height="10" fill="none" stroke="#c00" stroke-width="3" stroke-dasharray="4,2"/>
+  <text x="380" y="334" font-size="11" fill="#c00">Clearance gap</text>
+
+  <!-- Note at bottom -->
+  <text x="240" y="395" text-anchor="middle" font-size="11" fill="#777">Both leaves share this cross-section. Leaf A tab goes right, Leaf B tab goes left (or same side for flat hinge).</text>
+
+</svg>
