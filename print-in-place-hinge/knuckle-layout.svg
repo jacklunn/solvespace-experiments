@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260" font-family="monospace" font-size="12">
+
+  <!-- Background -->
+  <rect width="520" height="260" fill="#f8f8f8"/>
+
+  <!-- Title -->
+  <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#222">Print-in-Place Hinge — Knuckle Layout (Side View)</text>
+
+  <!-- Pin (full length horizontal bar) -->
+  <!-- total_len = 5×6 + 4×0.25 = 31mm, drawn at ~10px/mm -->
+  <!-- Pin spans x=60 to x=370, y=120 to y=140 (20px = 2mm diameter) -->
+  <rect x="60" y="118" width="310" height="16" rx="8" fill="#aaa" stroke="#666" stroke-width="1"/>
+  <text x="215" y="150" text-anchor="middle" font-size="11" fill="#555">pin</text>
+
+  <!-- Leaf A knuckles (3 segments) — above the pin, darker blue -->
+  <!-- knuckle_len = 6mm = 60px, knuckle_gap = 0.25mm ~= 2.5px -->
+  <!-- Positions: [0,60], [122.5,182.5], [245,305] -->
+
+  <!-- Leaf A knuckle 1: x=60, width=60 -->
+  <rect x="60"   y="80" width="60" height="38" rx="3" fill="#4a90d9" stroke="#2c5f8a" stroke-width="1.5"/>
+  <!-- Leaf A knuckle 2 -->
+  <rect x="182"  y="80" width="60" height="38" rx="3" fill="#4a90d9" stroke="#2c5f8a" stroke-width="1.5"/>
+  <!-- Leaf A knuckle 3 -->
+  <rect x="304"  y="80" width="60" height="38" rx="3" fill="#4a90d9" stroke="#2c5f8a" stroke-width="1.5"/>
+
+  <!-- Leaf A tab (left side) -->
+  <rect x="20" y="86" width="40" height="26" rx="2" fill="#4a90d9" stroke="#2c5f8a" stroke-width="1.5"/>
+  <text x="40" y="72" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c5f8a">Leaf A</text>
+
+  <!-- Leaf B knuckles (2 segments) — below the pin, orange -->
+  <!-- Positions: [62.5,122.5], [184.5,244.5] -->
+  <!-- knuckle 1: x=122.5, but snap to ~122 -->
+  <rect x="122"  y="134" width="60" height="38" rx="3" fill="#e8853a" stroke="#a05010" stroke-width="1.5"/>
+  <rect x="244"  y="134" width="60" height="38" rx="3" fill="#e8853a" stroke="#a05010" stroke-width="1.5"/>
+
+  <!-- Leaf B tab (right side) -->
+  <rect x="364" y="160" width="40" height="26" rx="2" fill="#e8853a" stroke="#a05010" stroke-width="1.5"/>
+  <text x="374" y="200" text-anchor="middle" font-size="11" font-weight="bold" fill="#a05010">Leaf B</text>
+
+  <!-- Gap callouts between knuckles -->
+  <!-- Gap between A-knuckle1 and B-knuckle1 (x=120 to x=122) -->
+  <line x1="120" y1="99" x2="122" y2="99" stroke="#c00" stroke-width="1"/>
+  <line x1="120" y1="93" x2="120" y2="105" stroke="#c00" stroke-width="1"/>
+  <line x1="122" y1="93" x2="122" y2="105" stroke="#c00" stroke-width="1"/>
+  <text x="121" y="78" text-anchor="middle" font-size="10" fill="#c00">0.25mm</text>
+  <line x1="121" y1="80" x2="121" y2="93" stroke="#c00" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+  <!-- Dimension line: total length -->
+  <line x1="60"  y1="220" x2="370" y2="220" stroke="#444" stroke-width="1"/>
+  <line x1="60"  y1="214" x2="60"  y2="226" stroke="#444" stroke-width="1"/>
+  <line x1="370" y1="214" x2="370" y2="226" stroke="#444" stroke-width="1"/>
+  <text x="215" y="236" text-anchor="middle" font-size="11" fill="#444">total length = 5 × 6mm + 4 × 0.25mm ≈ 31mm</text>
+
+  <!-- Knuckle length callout -->
+  <line x1="60"  y1="58" x2="120" y2="58" stroke="#2c5f8a" stroke-width="1"/>
+  <line x1="60"  y1="52" x2="60"  y2="64" stroke="#2c5f8a" stroke-width="1"/>
+  <line x1="120" y1="52" x2="120" y2="64" stroke="#2c5f8a" stroke-width="1"/>
+  <text x="90" y="50" text-anchor="middle" font-size="10" fill="#2c5f8a">6mm</text>
+
+  <!-- Legend -->
+  <rect x="400" y="80"  width="14" height="14" fill="#4a90d9" stroke="#2c5f8a" stroke-width="1"/>
+  <text x="420" y="92" font-size="11" fill="#333">Leaf A (3 knuckles)</text>
+  <rect x="400" y="102" width="14" height="14" fill="#e8853a" stroke="#a05010" stroke-width="1"/>
+  <text x="420" y="114" font-size="11" fill="#333">Leaf B (2 knuckles)</text>
+  <rect x="400" y="124" width="14" height="14" fill="#aaa" stroke="#666" stroke-width="1"/>
+  <text x="420" y="136" font-size="11" fill="#333">Pin</text>
+
+</svg>
