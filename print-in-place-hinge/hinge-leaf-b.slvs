@@ -91,6 +91,23 @@ Param.h.v.=00030023
 Param.val=-0.50000000000000000000
 AddParam
 
+Request.h.v=00000001
+Request.type=100
+Request.group.v=00000001
+Request.construction=0
+AddRequest
+
+Request.h.v=00000002
+Request.type=100
+Request.group.v=00000001
+Request.construction=0
+AddRequest
+
+Request.h.v=00000003
+Request.type=100
+Request.group.v=00000001
+Request.construction=0
+AddRequest
 
 Entity.h.v=00010000
 Entity.type=10000
